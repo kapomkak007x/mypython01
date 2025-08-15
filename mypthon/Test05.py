@@ -1,12 +1,17 @@
-fullname=input('ป้อนชื่อ-นามสกุล:')
-year_born=input('ป้อนปีเกิด พ.ศ.:')
-print('----------------')
+fullname = input('ป้อนชื่อ: ')
+year_born = input('ป้อนปีเกิด พ.ศ.: ')
+print("-----------------------------")
 print(f'สวัสดีคุณ {fullname}')
-print(f'ุคุณเกิดปี พ.ศ. {year_born} ตอนนี้คุณอายุ {2568 - int(year_born)}')
-print('----------------')
-print(f'{fullname} เกิดปี พ.ศ. {year_born} ตอนนี้คุณอายุ {2568 - int(year_born)}')
-print()
-print()
-print('-------------')
+print(f'คุณเกิดในปี พ.ศ. {year_born} ตอนนี้คุณอายุ {2568 - int(year_born)}')
+print("-----------------------------") # ,
+print("สวัสดีคุณ", fullname)
+print("คุณเกิดในปี พ.ศ.", year_born, "ตอนนี้คุณอายุ", 2568 - int(year_born))
+print("-----------------------------") # +
+print("สวัสดีคุณ " + fullname)
+print("คุณเกิดในปี พ.ศ. " + year_born + " ตอนนี้คุณอายุ " + str(2568 - int(year_born)))
+print("-----------------------------") # formatนะจ๊ะ
+print("สวัสดีคุณ {}".format(fullname))
+print("คุณเกิดในปี พ.ศ. {} ตอนนี้คุณอายุ {}".format(year_born, 2568 - int(year_born)))
+print("-----------------------------")
 
 
